@@ -1,0 +1,15 @@
+[package]
+name = "leapfrog"
+version = "0.1.0"
+edition = "2021"
+description = "High-level Rust bindings to the C++ Leap Motion SDK 2.3.1"
+
+[workspace]
+members = [".", "leapcpp-sys"]
+
+[dependencies]
+leapcpp-sys = { path = "leapcpp-sys" }
+log = "0.4.14"
+
+[dev-dependencies]
+macroquad = { version = "0.3.10", default-features = false }
