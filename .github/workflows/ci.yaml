@@ -10,6 +10,7 @@ env:
   RUSTUP_MAX_RETRIES: 10
   CARGO_INCREMENTAL: 0
   CI: 1
+  CICD_CHECK_ONLY: 1
   RUST_BACKTRACE: short
   RUSTFLAGS: -D warnings
   RUSTDOCFLAGS: -D warnings
@@ -30,7 +31,7 @@ jobs:
       run: rustup install stable --profile=minimal
 
     - name: Install CI/CD tooling
-      run: cargo install sludge-cicd --debug
+      run: cargo install --git https://github.com/SludgePhD/CICD --debug
 
     - name: Run CI/CD
       run: sludge-cicd
