@@ -1,5 +1,5 @@
 [package]
-name = "leapfrog"
+name = "leapcpp"
 version = "0.1.0"
 edition = "2021"
 description = "High-level Rust bindings to the C++ Leap Motion SDK 2.3.1"

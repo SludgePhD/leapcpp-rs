@@ -7,7 +7,7 @@ use std::{
     time::Duration,
 };
 
-use leapfrog::{ControllerRef, Listener, ManagedController, Policy};
+use leapcpp::{ControllerRef, Listener, ManagedController, Policy};
 
 struct MyListener {
     exit: Arc<AtomicBool>,

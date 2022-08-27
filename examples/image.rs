@@ -1,6 +1,6 @@
 //! This example acquires raw image frames and displays them in a window.
 
-use leapfrog::{ManagedController, Policy};
+use leapcpp::{ManagedController, Policy};
 use macroquad::prelude::*;
 
 #[macroquad::main("LeapImage")]
