@@ -2,7 +2,6 @@
 // heap.
 
 mod listener;
-pub mod math;
 
 pub mod image;
 mod managed;
