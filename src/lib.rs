@@ -1,3 +1,7 @@
+//! High-level Rust bindings to the legacy Leap Motion C++ SDK 2.3.1.
+//!
+//! (very incomplete, you probably shouldn't be using this)
+
 // Note: (some?) `Leap.h` types appear to be location-sensitive, so they must be constructed on the
 // heap.
 
@@ -216,6 +220,8 @@ pub enum Policy {
 }
 
 /// A frame of tracking data.
+///
+/// (note that this doesn't currently let you access the interesting tracking data)
 pub struct Frame {
     inner: Box<sys::Leap_Frame>,
 }
