@@ -3,6 +3,11 @@ name = "leapcpp"
 version = "0.1.0"
 edition = "2021"
 description = "High-level Rust bindings to the C++ Leap Motion SDK 2.3.1"
+repository = "https://github.com/SludgePhD/leapcpp-rs"
+license = "0BSD"
+
+[lib]
+test = false
 
 [dependencies]
 leapcpp-sys = "0.1.0"
